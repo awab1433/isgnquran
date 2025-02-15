@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>New Hampshire Quran Competition</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/12e5fae3b2.js" crossorigin="anonymous"></script>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+p {
+text-wrap: wrap;
+}
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("./quran.jpg");
+  min-height: 100%;
+}
+.welcome {
+  font-size: 25pt;
+  color: white;
+  font-weight: bold;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+.center {
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+  flex-wrap: wrap;
+
+}
+.centeri {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.col-container {
+  display: table;
+  width: 100%;
+}
+.col {
+  display: table-cell;
+  padding: 16px;
+}
+.banner{
+background-color: white;
+width: 100%;
+color: black;
+text-align: center;
+font-weight: bold;
+}
+.flex-container {
+margin-top: 70px;
+  display: flex;
+  justify-content: center;
+   width: 100%;
+}
+.flex-container img{
+width: 65%;
+height: auto;
+}
+.textwrap{
+text-wrap: wrap;
+ word-wrap: break-word; 
+  overflow-wrap: break-word; 
+  width: 100%; 
+}
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            background-color: #fff;
+            border: 2px solid #dee2e6;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            table-layout: fixed;
+        }
+
+        th,
+        td {
+            border: 1px solid #dee2e6;
+            padding: 10px;
+            text-align: center;
+            word-wrap: break-word;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: #343a40;
+        }
+
+        .highlight {
+            background-color: #f8f9fa;
+        }
+
+        .special {
+            background-color: #f0f0f0;
+        }
+.registration {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+        
+
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#homepage" class="w3-bar-item w3-button w3-wide"><img src="School Logo.jpg" alt="Logo" width="50" height="50">
+</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button"> About</a>
+	  <a href="#schedule" class="w3-bar-item w3-button"><i class="fa fa-calendar-o"></i> Program Schedule</a>
+	  <a href="#register" class="w3-bar-item w3-button"><i class="fa fa-plus-square"></i> Register</a>
+	  <a href="#sponsor" class="w3-bar-item w3-button"><i class="fa-solid fa-envelope"></i> Sponsor</a>
+      <a href="http://isgn.org/wp" class="w3-bar-item w3-button"><i class="fa-solid fa-mosque"></i> ISGN</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button"> About</a>
+  <a href="#schedule" onclick="w3_close()" class="w3-bar-item w3-button"> Program Schedule</a>
+  <a href="#register" onclick="w3_close()" class="w3-bar-item w3-button"> Register</a>
+  <a href="#sponsor" onclick="w3_close()" class="w3-bar-item w3-button"> Sponsor</a>
+  <a href="http://isgn.org/wp" onclick="w3_close()" class="w3-bar-item w3-button"></i> ISGN</a>
+</nav>
+<div class="flex-container">
+<img src="flyer.png">
+</div>
+<!-- About Section -->
+<div class="w3-container textwrap" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">About the Program</h3>
+  <br>
+  
+    <div class="w3-center textwrap">
+      <i class="fa-solid fa fa-calendar-o w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">NH Quran Competition</p>
+      <p class="textwrap"><b>"And We have certainly made the Quran easy to remember. So, is there anyone who will be mindful?"<br>
+ (The Holy Quran 54:17)</b><br><br>Islamic society of Greater Nashua is honored to host an annual Quran competition on April 12th from 9AM to 5PM for people ages 6-22 years old. The competition is open to the whole community to participate in. Please join us to celebrate our youth in their journey with the Quran.</p>
+    </div>
+
+  </div>
+
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="schedule">
+  <h3 class="w3-center">Schedule of the Program</h3>
+  <div class="w3-row-padding" style="margin-top:64px">
+  
+
+    <table>
+        <tr>
+            <th>Time</th>
+            <th colspan="3">Activity</th>
+        </tr>
+        <tr>
+            <td class="highlight"><strong>9am - 10am:</strong></td>
+            <td colspan="3">Registration and Tag Distribution</td>
+            
+        </tr>
+        <tr>
+            <td class="highlight"><strong>10am - 11am:</strong></td>
+            <td colspan="3">Pre-Elimination Rounds + Level 1</td>
+        </tr>
+        <tr>
+            <td class="highlight"><strong>11am - 12pm:</strong></td>
+            <td colspan="3">Level 2 + Level 3 Competition</td>
+        </tr>
+        <tr>
+            <td class="highlight"><strong>1pm - 2pm:</strong></td>
+            <td>Dhur Prayer</td>
+			<td colspan="2">Lunch</td>
+			
+        </tr>
+        <tr>
+            <td class="highlight"><strong>3pm - 4pm:</strong></td>
+            <td colspan="3">Level 4 + Level 5 Competition</td>
+        </tr>
+		<tr>
+            <td class="highlight"><strong>4pm - 5pm:</strong></td>
+            <td colspan="3">Level 6 + Level ?!!!!!!?!?!?!?!?! Competition</td>
+        </tr>
+    </table>
+
+
+
+<!--
+  <p><strong>9am - 10am:</strong> Registration and Tag Disribution<br>
+<strong>10am - 11am:</strong> Pre-Elimination Rounds + Level 1<br>
+<strong>11am - 12pm:</strong> Level 3 + Level 3 Competition<br>
+<strong>1pm - 2pm:</strong> Dhur Prayer, Lunch<br>
+<strong>3pm - 4pm:<strong> Level 4 + Level 5 Competition<br>
+<strong>4pm - 5pm</strong> Level 6 + ?!?!?!?!?!<br>
+<strong>Level 7:</strong> Surah Al-Kahf (22 or younger)<br>
+ </p>
+ -->
+	</div>
+	</div>
+	
+
+
+<!-- Pricing Section -->
+<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="register">
+    <h3>REGISTRATION</h3>
+    <div class="w3-row-padding" style="display: flex; justify-content: center;">
+        <div class="flex-container" style="width: 66.66%; display: flex; flex-direction: column; align-items: center;">
+            <ul class="w3-ul w3-white w3-hover-shadow">
+                <li class="w3-black w3-xlarge w3-padding-32">Regular Student</li>
+                <li class="w3-padding-16">
+                    <p><strong>Level 1:</strong> Surah Al-Fatiha and surahs from Al-Nas to Al-Nasr (6 or younger)<br>
+                    <strong>Level 2:</strong> Surah Al-Kafiroon to Al-Asr (age 8 or younger)<br>
+                    <strong>Level 3:</strong> Surah Al-Burouj, Al-Tariq, Al-A'la (12 or younger)<br>
+                    <strong>Level 4:</strong> Surah Al-Nab’a, Al-Nazi'at, Abasa (14 or younger)<br>
+                    <strong>Level 5:</strong> Surah Al-Mulk, Al-Qalam (16 or younger)<br>
+                    <strong>Level 6:</strong> Surah Al-Qamar, Al-Rahman (18 or younger)<br>
+                    <strong>Level 7:</strong> Surah Al-Kahf (22 or younger)<br>
+                    </p>
+                </li>
+                <li class="w3-light-grey w3-padding-24">
+                    <h2 class="w3-wide">$ 10</h2>
+                    <span class="w3-opacity">per participant <br><b>Note:</b> There is financial assistance available. See form for more details.</span>
+                </li>
+                <li class="w3-light-grey w3-padding-24">
+                    <p><a class="w3-button w3-black w3-padding-large" href="https://docs.google.com/forms/d/1HU1zPI46acnwIsGVp6ZSyvkl6DufWYTSy6H_qo5MbQM/viewform" target="_blank"><i class="fa-solid fa-plus"></i> Register</a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- sponsor Section -->
+<div class="w3-container w3-center w3-light-grey" style="padding:128px 16px" id="sponsor">
+  <h3 class="w3-center">Program Sponsoring</h3>
+  <p class="w3-center w3-large">Please review the instructions on how to send fees and donations below.</p>
+  <div style="margin-top:48px">
+  <h3><b>schedule Instructions</b></h3>
+    <ol>
+  <li>Open Mohid online donation and schedule center using the link below.</li>
+  <li>Select “Sunday School” for the category.</li>
+  <li>Click the amount owed according to the type of registration.</li>
+  <li>Click “Donate” and enter your schedule information.</li>
+  <li>In the Notes section, please list the name(s) of the student(s) you are paying the registration fee for.</b></li>
+  <li>Review the schedule Summary and click "Pay" to finalize your schedule.</li>
+</ol> 
+<br>
+<a class="w3-button w3-black w3-padding-large" href="https://us.mohid.co/nh/nashua/isgn/masjid/online/donation/index/1" target="_blank">Pay Now</button></a></p>   
+  </div>
+</div>
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="sponsor">
+  <h3 class="w3-center">sponsor</h3>
+  <p class="w3-center w3-large">sponsor information:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> 5 Pine St Ext #1C, Nashua, NH 03060</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: <a href="mailto:althekrsundayschool@gmail.com">althekrsundayschool@gmail.com</a></p>
+    <br>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#homepage" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p>Al-Thekr Sunday School<br>Islamic Society Of Greater Nashua</p>
+</footer>
+ 
+<script>
+
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
