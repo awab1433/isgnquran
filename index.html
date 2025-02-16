@@ -11,14 +11,15 @@
 <script src="https://kit.fontawesome.com/12e5fae3b2.js" crossorigin="anonymous"></script>
 <style>
 body,h1,h2,h3,h4,h5,h6 {
-font-family: "Ahsing", "Raleway", sans-serif
-text-color: #816961;
+font-family: Raleway, sans-serif
 }
-
+h3, h4 {
+color: #4f5da6;
+}
 body, html {
   height: 100%;
   line-height: 1.8;
-  background-color: #e3d2be;
+  
 }
 p {
 text-wrap: wrap;
@@ -67,13 +68,13 @@ text-align: center;
 font-weight: bold;
 }
 .flex-container {
-margin-top: 70px;
+margin-top: 75px;
   display: flex;
   justify-content: center;
    width: 100%;
 }
 .flex-container img{
-width: 65%;
+width: 35%;
 height: auto;
 }
 .textwrap{
@@ -127,12 +128,12 @@ text-wrap: wrap;
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#homepage" class="w3-bar-item w3-button w3-wide"><img src="School Logo.jpg" alt="Logo" width="50" height="50">
+    <a href="#homepage" class="w3-bar-item w3-button w3-wide"><img src="icon.png" alt="Logo" width="50" height="50">
 </a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="#about" class="w3-bar-item w3-button"> About</a>
-	  <a href="#schedule" class="w3-bar-item w3-button"><i class="fa fa-calendar-o"></i> Program Schedule</a>
+	  <a href="#schedule" class="w3-bar-item w3-button"><i class="fa fa-calendar-o"></i> Schedule</a>
 	  <a href="#register" class="w3-bar-item w3-button"><i class="fa fa-plus-square"></i> Register</a>
 	  <a href="#sponsor" class="w3-bar-item w3-button"><i class="fa-solid fa-envelope"></i> Sponsor</a>
       <a href="http://isgn.org/wp" class="w3-bar-item w3-button"><i class="fa-solid fa-mosque"></i> ISGN</a>
@@ -149,23 +150,21 @@ text-wrap: wrap;
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button"> About</a>
-  <a href="#schedule" onclick="w3_close()" class="w3-bar-item w3-button"> Program Schedule</a>
+  <a href="#schedule" onclick="w3_close()" class="w3-bar-item w3-button"> Schedule</a>
   <a href="#register" onclick="w3_close()" class="w3-bar-item w3-button"> Register</a>
   <a href="#sponsor" onclick="w3_close()" class="w3-bar-item w3-button"> Sponsor</a>
   <a href="http://isgn.org/wp" onclick="w3_close()" class="w3-bar-item w3-button"></i> ISGN</a>
 </nav>
-<div class="flex-container">
+<div class="flex-container" id="homepage">
 <img src="flyer.png">
 </div>
 <!-- About Section -->
-<div class="w3-container textwrap" style="padding:128px 16px" id="about">
-  <h3 class="w3-center">About the Program</h3>
-  <br>
+<div class="w3-container textwrap" style="padding:128px 16px; background-color: #e3d2be;" id="about">
   
-    <div class="w3-center textwrap">
-      <i class="fa-solid fa fa-calendar-o w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">NH Quran Competition</p>
-      <p class="textwrap"><b>"And We have certainly made the Quran easy to remember. So, is there anyone who will be mindful?"<br>
+    <div class="textwrap">
+      
+      <h3 class="w3-center">About the Competition</h3>
+      <p class="textwrap w3-center"><b>"And We have certainly made the Quran easy to remember. So, is there anyone who will be mindful?"<br>
  (The Holy Quran 54:17)</b><br><br>Islamic society of Greater Nashua is honored to host an annual Quran competition on April 12th from 9AM to 5PM for people ages 6-22 years old. The competition is open to the whole community to participate in. Please join us to celebrate our youth in their journey with the Quran.</p>
     </div>
 
@@ -174,7 +173,7 @@ text-wrap: wrap;
 
 <!-- Team Section -->
 <div class="w3-container" style="padding:128px 16px" id="schedule">
-  <h3 class="w3-center">Schedule of the Program</h3>
+  <h3 class="w3-center">Event Schedule</h3>
   <div class="w3-row-padding" style="margin-top:64px">
   
 
@@ -198,17 +197,20 @@ text-wrap: wrap;
         </tr>
         <tr>
             <td class="highlight"><strong>1pm - 2pm:</strong></td>
-            <td>Dhur Prayer</td>
-			<td colspan="2">Lunch</td>
+            <td colspan="3">Levels 1,2,3 Awards + Dhur Prayer & Lunch</td>
 			
         </tr>
         <tr>
-            <td class="highlight"><strong>3pm - 4pm:</strong></td>
+            <td class="highlight"><strong>2pm - 3pm:</strong></td>
             <td colspan="3">Level 4 + Level 5 Competition</td>
         </tr>
 		<tr>
+            <td class="highlight"><strong>3pm - 4pm:</strong></td>
+            <td colspan="3">Level 6 + Level 7 Competition</td>
+        </tr>
+		<tr>
             <td class="highlight"><strong>4pm - 5pm:</strong></td>
-            <td colspan="3">Level 6 + Level ?!!!!!!?!?!?!?!?! Competition</td>
+            <td colspan="3">Levels 4,5,6,7 Awards</td>
         </tr>
     </table>
 
@@ -224,18 +226,19 @@ text-wrap: wrap;
 <strong>Level 7:</strong> Surah Al-Kahf (22 or younger)<br>
  </p>
  -->
+ <p><i><b>Note:</b> Any level with less than 2 participants will be canceled.</i></p>
 	</div>
 	</div>
 	
 
 
-<!-- Pricing Section -->
-<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="register">
+
+<div class="w3-container w3-center" style="padding:128px 16px; background-color: #e3d2be;" id="register">
     <h3>REGISTRATION</h3>
     <div class="w3-row-padding" style="display: flex; justify-content: center;">
-        <div class="flex-container" style="width: 66.66%; display: flex; flex-direction: column; align-items: center;">
+        <div class="flex-container" style="width: 100%; display: flex; flex-direction: column; align-items: center; text-align: left;">
             <ul class="w3-ul w3-white w3-hover-shadow">
-                <li class="w3-black w3-xlarge w3-padding-32">Regular Student</li>
+                <li class="w3-xlarge w3-padding-32" style="text-align: center; background-color: #4f5da6; color: white;">Paricipant Registation</li>
                 <li class="w3-padding-16">
                     <p><strong>Level 1:</strong> Surah Al-Fatiha and surahs from Al-Nas to Al-Nasr (6 or younger)<br>
                     <strong>Level 2:</strong> Surah Al-Kafiroon to Al-Asr (age 8 or younger)<br>
@@ -246,12 +249,12 @@ text-wrap: wrap;
                     <strong>Level 7:</strong> Surah Al-Kahf (22 or younger)<br>
                     </p>
                 </li>
-                <li class="w3-light-grey w3-padding-24">
+                <li class="w3-light-grey w3-padding-24" style="text-align: center;">
                     <h2 class="w3-wide">$ 10</h2>
                     <span class="w3-opacity">per participant <br><b>Note:</b> There is financial assistance available. See form for more details.</span>
                 </li>
-                <li class="w3-light-grey w3-padding-24">
-                    <p><a class="w3-button w3-black w3-padding-large" href="https://docs.google.com/forms/d/1HU1zPI46acnwIsGVp6ZSyvkl6DufWYTSy6H_qo5MbQM/viewform" target="_blank"><i class="fa-solid fa-plus"></i> Register</a></p>
+                <li class="w3-light-grey w3-padding-24" style="text-align: center;">
+                    <p><a class="w3-button w3-padding-large" style="background-color: #4f5da6; color: white;" href="https://docs.google.com/forms/d/1HU1zPI46acnwIsGVp6ZSyvkl6DufWYTSy6H_qo5MbQM/viewform" target="_blank"><i class="fa-solid fa-plus"></i> Register</a></p>
                 </li>
             </ul>
         </div>
@@ -259,32 +262,22 @@ text-wrap: wrap;
 </div>
 
 <!-- sponsor Section -->
-<div class="w3-container w3-center w3-light-grey" style="padding:128px 16px" id="sponsor">
-  <h3 class="w3-center">Program Sponsoring</h3>
-  <p class="w3-center w3-large">Please review the instructions on how to send fees and donations below.</p>
+<div class="w3-container" style="padding:128px 16px" id="sponsor">
+  <h3 class="w3-center">Support</h3>
   <div style="margin-top:48px">
-  <h3><b>schedule Instructions</b></h3>
-    <ol>
-  <li>Open Mohid online donation and schedule center using the link below.</li>
-  <li>Select “Sunday School” for the category.</li>
-  <li>Click the amount owed according to the type of registration.</li>
-  <li>Click “Donate” and enter your schedule information.</li>
-  <li>In the Notes section, please list the name(s) of the student(s) you are paying the registration fee for.</b></li>
-  <li>Review the schedule Summary and click "Pay" to finalize your schedule.</li>
-</ol> 
-<br>
-<a class="w3-button w3-black w3-padding-large" href="https://us.mohid.co/nh/nashua/isgn/masjid/online/donation/index/1" target="_blank">Pay Now</button></a></p>   
+
+<h4>Contributions, Volunteers, and Sponsors...</h4>
+<p>are appreciated to share us the blessing of the event.</p>
+<br><br>
+<a class="w3-button w3-padding-large" style="background-color: #4f5da6; color: white;" href="https://us.mohid.co/nh/nashua/isgn/masjid/online/donation/index/15" target="_blank">Donate Now!</button></a></p>   
   </div>
 </div>
-<div class="w3-container w3-light-grey" style="padding:128px 16px" id="sponsor">
-  <h3 class="w3-center">sponsor</h3>
-  <p class="w3-center w3-large">sponsor information:</p>
-  <div style="margin-top:48px">
-    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> 5 Pine St Ext #1C, Nashua, NH 03060</p>
-    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: <a href="mailto:althekrsundayschool@gmail.com">althekrsundayschool@gmail.com</a></p>
-    <br>
+
+
+
+
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
+<footer class="w3-center w3-padding-64" style="background-color: #4f5da6; color: white;">
   <a href="#homepage" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <p>New Hampshire Quran Competition</p>
 </footer>
